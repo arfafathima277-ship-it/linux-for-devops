@@ -1,0 +1,174 @@
+# Linux & Git Interview Questions
+
+This document contains frequently asked Linux and Git interview questions for beginners and aspiring DevOps Engineers. Use these questions for self-assessment and interview preparation.
+
+---
+
+# Linux File System
+
+1. What is Linux?
+2. What is the Linux file system?
+3. What is the root (`/`) directory?
+4. What is the difference between an absolute path and a relative path?
+5. What is the difference between `cd /` and `cd ~`?
+6. What does the `pwd` command do?
+7. What does the `ls` command do?
+8. Which command lists hidden files?
+9. What is the difference between `mkdir` and `rmdir`?
+10. What is the difference between `touch` and `cat > filename`?
+11. What is the difference between a file and a directory?
+12. What is the purpose of the `/home` directory?
+13. What is the purpose of the `/etc` directory?
+14. What is the purpose of the `/var` directory?
+15. What is the purpose of the `/tmp` directory?
+16. What is the purpose of the `/bin` directory?
+17. What is the purpose of the `/usr` directory?
+18. What is the difference between a soft link and a hard link?
+19. How do you create a soft link?
+20. How do you create a hard link?
+
+---
+
+# Linux Permissions
+
+21. What are Linux file permissions?
+22. What does the `chmod` command do?
+23. What does the `chown` command do?
+24. What is the difference between `chmod` and `chown`?
+25. What does `chmod 755 file.txt` mean?
+26. What does `chmod 777 file.txt` mean?
+27. What do Read, Write, and Execute permissions represent?
+28. What are the numeric permission values (4, 2, 1)?
+29. How do you change the owner of a file?
+30. How do you change the group of a file?
+
+---
+
+# Users & Groups
+
+31. What is a user in Linux?
+32. What is a group in Linux?
+33. What does the `whoami` command do?
+34. What does the `who` command do?
+35. What is the difference between `who` and `whoami`?
+36. Which command creates a new user?
+37. Which command deletes a user?
+38. Which command changes a user's password?
+39. How do you switch to another user?
+40. What is the purpose of the `sudo` command?
+
+---
+
+# Linux Processes
+
+41. What is a process?
+42. What is a PID?
+43. Which commands display running processes?
+44. What is the difference between `ps` and `top`?
+45. What is `htop`?
+46. What is the difference between `kill` and `kill -9`?
+47. How do you terminate a process?
+48. What is a daemon process?
+49. What is the difference between a process and a service?
+50. Which command continuously monitors CPU and memory usage?
+51. What is process priority?
+52. What do the `nice` and `renice` commands do?
+
+---
+
+# Package Management
+
+53. What is a package manager?
+54. What is the difference between `apt update` and `apt upgrade`?
+55. Which command installs a package?
+56. Which command removes a package?
+57. Which command updates package information?
+58. Which command upgrades installed packages?
+59. Which command searches for a package?
+60. Which command lists installed packages?
+
+---
+
+# Linux Networking
+
+61. What is an IP address?
+62. What is the difference between a Public IP and a Private IP?
+63. What is DNS?
+64. What is a Port?
+65. What is SSH?
+66. Why is SSH used?
+67. What is the difference between HTTP and HTTPS?
+68. What is the difference between `ping` and `curl`?
+69. What does the `ping` command do?
+70. What does the `curl` command do?
+71. What does the `wget` command do?
+72. What is the difference between `curl` and `wget`?
+73. Which command displays your IP address?
+74. What is the difference between `find` and `grep`?
+75. What does the `grep` command do?
+76. What does the `find` command do?
+77. What is the difference between `scp` and `rsync`?
+78. What is the purpose of `netstat` or `ss`?
+
+---
+
+# Shell Scripting
+
+79. What is Shell Scripting?
+80. What is a Shell?
+81. What is Bash?
+82. What is the purpose of the Shebang (`#!/bin/bash`)?
+83. How do you make a shell script executable?
+84. What is the difference between `=` and `==` in Shell Scripting?
+85. What are variables in Shell Scripting?
+86. What are positional parameters?
+87. What is the difference between `for` and `while` loops?
+88. What is an `if-else` statement?
+
+---
+
+# Git & GitHub
+
+89. What is Git?
+90. What is GitHub?
+91. What is the difference between Git and GitHub?
+92. What is a Repository?
+93. What is Version Control?
+94. Why do we use Git?
+95. What does `git init` do?
+96. What does `git clone` do?
+97. What does `git status` do?
+98. What does `git add .` do?
+99. What does `git commit -m "message"` do?
+100. What does `git push` do?
+101. What does `git pull` do?
+102. What is the difference between `git fetch` and `git pull`?
+103. What is a Git Branch?
+104. Why do we create branches?
+105. What is the purpose of `git checkout`?
+106. What is the purpose of `git merge`?
+107. What is a Merge Conflict?
+108. How do you resolve a Merge Conflict?
+109. What is the purpose of `.gitignore`?
+110. What is the difference between `git reset` and `git revert`?
+111. What is the purpose of `git log`?
+112. What is the purpose of `git diff`?
+113. What is the difference between a Local Repository and a Remote Repository?
+114. What is the `origin` remote in Git?
+115. What is the difference between `git clone` and `git fork`?
+116. What is Git Staging?
+117. What is the Working Directory?
+118. What is the Staging Area?
+119. What is Git Commit History?
+120. Explain the complete Git workflow from `git init` to `git push`.
+
+---
+
+## Goal
+
+- Revise these questions regularly.
+- Practice answering without referring to notes.
+- Focus on understanding concepts instead of memorizing definitions.
+- Use this document as a quick revision guide before interviews.
+
+Happy Learning! 🚀
