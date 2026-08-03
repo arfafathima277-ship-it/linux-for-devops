@@ -1,174 +1,348 @@
-# Linux & Git Interview Questions
+# Linux Interview Questions
 
-This document contains frequently asked Linux and Git interview questions for beginners and aspiring DevOps Engineers. Use these questions for self-assessment and interview preparation.
+## 1. What is Linux?
 
----
-
-# Linux File System
-
-1. What is Linux?
-2. What is the Linux file system?
-3. What is the root (`/`) directory?
-4. What is the difference between an absolute path and a relative path?
-5. What is the difference between `cd /` and `cd ~`?
-6. What does the `pwd` command do?
-7. What does the `ls` command do?
-8. Which command lists hidden files?
-9. What is the difference between `mkdir` and `rmdir`?
-10. What is the difference between `touch` and `cat > filename`?
-11. What is the difference between a file and a directory?
-12. What is the purpose of the `/home` directory?
-13. What is the purpose of the `/etc` directory?
-14. What is the purpose of the `/var` directory?
-15. What is the purpose of the `/tmp` directory?
-16. What is the purpose of the `/bin` directory?
-17. What is the purpose of the `/usr` directory?
-18. What is the difference between a soft link and a hard link?
-19. How do you create a soft link?
-20. How do you create a hard link?
+Linux is an open-source, Unix-like operating system known for its security, stability, and performance. It is widely used for servers, cloud computing, and DevOps.
 
 ---
 
-# Linux Permissions
+## 2. What is the Linux Kernel?
 
-21. What are Linux file permissions?
-22. What does the `chmod` command do?
-23. What does the `chown` command do?
-24. What is the difference between `chmod` and `chown`?
-25. What does `chmod 755 file.txt` mean?
-26. What does `chmod 777 file.txt` mean?
-27. What do Read, Write, and Execute permissions represent?
-28. What are the numeric permission values (4, 2, 1)?
-29. How do you change the owner of a file?
-30. How do you change the group of a file?
+The Kernel is the core component of the Linux operating system. It manages hardware resources and acts as a bridge between applications and hardware.
 
 ---
 
-# Users & Groups
+## 3. What is the difference between Linux and Unix?
 
-31. What is a user in Linux?
-32. What is a group in Linux?
-33. What does the `whoami` command do?
-34. What does the `who` command do?
-35. What is the difference between `who` and `whoami`?
-36. Which command creates a new user?
-37. Which command deletes a user?
-38. Which command changes a user's password?
-39. How do you switch to another user?
-40. What is the purpose of the `sudo` command?
+| Linux | Unix |
+|-------|------|
+| Open Source | Mostly Proprietary |
+| Free | Usually Paid |
+| Community Supported | Vendor Supported |
+| Used in Servers, Cloud, DevOps | Enterprise Systems |
 
 ---
 
-# Linux Processes
+## 4. What is the root user?
 
-41. What is a process?
-42. What is a PID?
-43. Which commands display running processes?
-44. What is the difference between `ps` and `top`?
-45. What is `htop`?
-46. What is the difference between `kill` and `kill -9`?
-47. How do you terminate a process?
-48. What is a daemon process?
-49. What is the difference between a process and a service?
-50. Which command continuously monitors CPU and memory usage?
-51. What is process priority?
-52. What do the `nice` and `renice` commands do?
+The root user is the superuser in Linux with complete access to all files, directories, and system settings.
 
 ---
 
-# Package Management
+## 5. What is the difference between an absolute path and a relative path?
 
-53. What is a package manager?
-54. What is the difference between `apt update` and `apt upgrade`?
-55. Which command installs a package?
-56. Which command removes a package?
-57. Which command updates package information?
-58. Which command upgrades installed packages?
-59. Which command searches for a package?
-60. Which command lists installed packages?
+Absolute Path:
+- Starts from the root directory (/)
 
----
+Example:
 
-# Linux Networking
+```bash
+/home/arfa/Documents
+```
 
-61. What is an IP address?
-62. What is the difference between a Public IP and a Private IP?
-63. What is DNS?
-64. What is a Port?
-65. What is SSH?
-66. Why is SSH used?
-67. What is the difference between HTTP and HTTPS?
-68. What is the difference between `ping` and `curl`?
-69. What does the `ping` command do?
-70. What does the `curl` command do?
-71. What does the `wget` command do?
-72. What is the difference between `curl` and `wget`?
-73. Which command displays your IP address?
-74. What is the difference between `find` and `grep`?
-75. What does the `grep` command do?
-76. What does the `find` command do?
-77. What is the difference between `scp` and `rsync`?
-78. What is the purpose of `netstat` or `ss`?
+Relative Path:
+- Starts from the current directory.
+
+Example:
+
+```bash
+Documents/file.txt
+```
 
 ---
 
-# Shell Scripting
+## 6. How do you check the current working directory?
 
-79. What is Shell Scripting?
-80. What is a Shell?
-81. What is Bash?
-82. What is the purpose of the Shebang (`#!/bin/bash`)?
-83. How do you make a shell script executable?
-84. What is the difference between `=` and `==` in Shell Scripting?
-85. What are variables in Shell Scripting?
-86. What are positional parameters?
-87. What is the difference between `for` and `while` loops?
-88. What is an `if-else` statement?
+```bash
+pwd
+```
 
 ---
 
-# Git & GitHub
+## 7. Which command lists files and directories?
 
-89. What is Git?
-90. What is GitHub?
-91. What is the difference between Git and GitHub?
-92. What is a Repository?
-93. What is Version Control?
-94. Why do we use Git?
-95. What does `git init` do?
-96. What does `git clone` do?
-97. What does `git status` do?
-98. What does `git add .` do?
-99. What does `git commit -m "message"` do?
-100. What does `git push` do?
-101. What does `git pull` do?
-102. What is the difference between `git fetch` and `git pull`?
-103. What is a Git Branch?
-104. Why do we create branches?
-105. What is the purpose of `git checkout`?
-106. What is the purpose of `git merge`?
-107. What is a Merge Conflict?
-108. How do you resolve a Merge Conflict?
-109. What is the purpose of `.gitignore`?
-110. What is the difference between `git reset` and `git revert`?
-111. What is the purpose of `git log`?
-112. What is the purpose of `git diff`?
-113. What is the difference between a Local Repository and a Remote Repository?
-114. What is the `origin` remote in Git?
-115. What is the difference between `git clone` and `git fork`?
-116. What is Git Staging?
-117. What is the Working Directory?
-118. What is the Staging Area?
-119. What is Git Commit History?
-120. Explain the complete Git workflow from `git init` to `git push`.
+```bash
+ls
+```
+
+Useful options:
+
+```bash
+ls -l
+ls -a
+ls -lh
+```
 
 ---
 
-## Goal
+## 8. How do you create a directory?
 
-- Revise these questions regularly.
-- Practice answering without referring to notes.
-- Focus on understanding concepts instead of memorizing definitions.
-- Use this document as a quick revision guide before interviews.
+```bash
+mkdir project
+```
 
-Happy Learning! 🚀
+---
+
+## 9. How do you remove a directory?
+
+Empty directory:
+
+```bash
+rmdir directory_name
+```
+
+Non-empty directory:
+
+```bash
+rm -r directory_name
+```
+
+---
+
+## 10. How do you create an empty file?
+
+```bash
+touch file.txt
+```
+
+---
+
+## 11. Difference between cp and mv?
+
+cp
+- Copies files or directories.
+
+Example:
+
+```bash
+cp file1.txt backup/
+```
+
+mv
+- Moves or renames files.
+
+Example:
+
+```bash
+mv file1.txt file2.txt
+```
+
+---
+
+## 12. How do you delete a file?
+
+```bash
+rm file.txt
+```
+
+---
+
+## 13. What does the cat command do?
+
+Displays the contents of a file.
+
+```bash
+cat file.txt
+```
+
+---
+
+## 14. What is the grep command?
+
+grep searches for specific text inside files.
+
+Example:
+
+```bash
+grep "error" logs.txt
+```
+
+---
+
+## 15. What is the find command?
+
+Used to search for files and directories.
+
+Example:
+
+```bash
+find /home -name "*.txt"
+```
+
+---
+
+## 16. What is the chmod command?
+
+Changes file permissions.
+
+Example:
+
+```bash
+chmod 755 script.sh
+```
+
+---
+
+## 17. What is the chown command?
+
+Changes the owner of a file.
+
+Example:
+
+```bash
+sudo chown user:user file.txt
+```
+
+---
+
+## 18. How do you check disk usage?
+
+```bash
+df -h
+```
+
+---
+
+## 19. How do you check directory size?
+
+```bash
+du -sh folder_name
+```
+
+---
+
+## 20. How do you check running processes?
+
+```bash
+ps
+```
+
+or
+
+```bash
+top
+```
+
+---
+
+## 21. How do you kill a process?
+
+```bash
+kill PID
+```
+
+Force kill:
+
+```bash
+kill -9 PID
+```
+
+---
+
+## 22. What is the difference between soft link and hard link?
+
+| Hard Link | Soft Link |
+|-----------|-----------|
+| Shares the same inode | Different inode |
+| Cannot cross file systems | Can cross file systems |
+| Works even if original filename changes | Breaks if original file is removed |
+
+---
+
+## 23. How do you check memory usage?
+
+```bash
+free -h
+```
+
+---
+
+## 24. How do you check CPU information?
+
+```bash
+lscpu
+```
+
+---
+
+## 25. How do you check the Linux version?
+
+```bash
+cat /etc/os-release
+```
+
+or
+
+```bash
+uname -a
+```
+
+---
+
+## 26. What is the difference between > and >> ?
+
+`>` overwrites the file.
+
+Example:
+
+```bash
+echo "Hello" > file.txt
+```
+
+`>>` appends to the file.
+
+Example:
+
+```bash
+echo "World" >> file.txt
+```
+
+---
+
+## 27. What is SSH?
+
+SSH (Secure Shell) is a secure protocol used to connect to remote Linux servers.
+
+Example:
+
+```bash
+ssh ubuntu@192.168.1.10
+```
+
+---
+
+## 28. What is sudo?
+
+`sudo` allows a normal user to execute commands with administrative privileges.
+
+Example:
+
+```bash
+sudo apt update
+```
+
+---
+
+## 29. What are file permissions in Linux?
+
+Linux permissions are divided into:
+- Read (r)
+- Write (w)
+- Execute (x)
+
+Permissions apply to:
+- User (u)
+- Group (g)
+- Others (o)
+
+---
+
+## 30. Why is Linux widely used in DevOps?
+
+- Open Source
+- Secure
+- Stable
+- Excellent command-line tools
+- Easy automation with Shell Scripting
+- Supports Docker and Kubernetes
+- Preferred OS for cloud platforms
