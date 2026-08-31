@@ -10,7 +10,7 @@
 - Numeric Permissions (755, 644, 600, 777)
 - Symbolic Permissions (+x, -w)
 
----
+--
 
 ## Permission Structure
 
